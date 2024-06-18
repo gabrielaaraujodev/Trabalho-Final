@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+  width: 85vh;
+  box-shadow: 0.2rem 0.2rem 1.2rem 0.1rem black
+}
+
+div#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#nav h3{
+  font-size: 3rem;
+}
+
+div#secoes {
+  display: flex;
+  gap: 1rem;
+}
+
+div#secoes span{
+  color: black;
+  font-weight: bold;
+  background: rgb(242, 242, 242);
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+div#secoes span:hover {
+  cursor: pointer;
+  background: rgb(223, 223, 223);
+}
+
+p{
+  border-bottom: 1.5px solid gray;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+div#infoPerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+div#infoPerfil img#pessoal {
+  width: 12rem;
+  height: 12rem;
+  border: 2px solid white;
+  box-shadow: .05rem .05rem .05rem .1rem black;
+}
+
+aside {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+aside h4 {
+  font-size: 1.5rem;
+}
+
+aside span {
+  font-size: 1.2rem;
+}
+
+aside :nth-child(3) {
+  font-weight: bold;
+}
+
+aside :nth-child(4) {
+  font-weight: bold;
+}
+
+div#socials img:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+span#adjustSeguidores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#adjustSeguidores div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+div#repo {
+  display: flex;
+  gap: 1rem;
+  margin: 0 1.5rem;
+}
+
+div.cardIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.cardIcons div {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+div.cardIcons div span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.gradient {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 77%, rgba(195,189,189,1) 100%);
+  
+}
+
+.gradient a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.gradient:hover {
+  transform: scale(1.1);
+  transition: 0.5s all;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem  black;
+}
+
+.gradient a:hover {
+  text-decoration: underline;
+  color: rgb(65, 65, 65);
+}
+
+#colegas {
+  display: flex;
+  gap: 2rem;
+}
+
+div#colegas img {
+  width: 10rem;
+  height: 10rem;
+}
+  
+.colegaAdjust {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+}
+
+.colegaAdjust span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+#img1 {
+  height: 360px;
+}
