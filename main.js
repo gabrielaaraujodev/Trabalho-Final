@@ -171,10 +171,7 @@ function nextImage(number) {
   let chaveLink = `link${control}`
   document.getElementById('img1').src = data[0].images[0][chave]; 
   document.getElementById('posicaoLink').href = data[0].linksCarrossel[0][chaveLink]; 
-  imagemIdx = control;
-  
-  console.log("🚀 ~ nextImage ~ chave:", chave)
-  
+  imagemIdx = control; 
 }
 
 
