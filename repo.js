@@ -20,6 +20,8 @@ fetch(apiUrl)
   })
   .then((data) => {
     dados = data;
+    console.log("🚀 ~ .then ~ dados:", dados)
+    
     changeInformatios();
   })
 
@@ -41,7 +43,8 @@ fetch(apiUrl)
 let repoName = document.getElementsByTagName('span');
 let repoDescription = document.getElementsByTagName('p');
 let repoLink = document.getElementsByTagName('a');
-
+let seguidores = document.getElementById('seguidores');
+let favoritos = document.getElementById('favoritos');
 
 function changeInformatios() {
   repoName[0].innerHTML = dados.name;
@@ -50,6 +53,8 @@ function changeInformatios() {
   let dataFormatada = (data.getDate()) + "/" + (data.getMonth()) + "/" + (data.getFullYear());
   repoDescription[1].innerHTML = dataFormatada;
   repoLink[3].href = dados.html_url;
+  seguidores.innerHTML = dados.stargazers_count;
+  favoritos.innerHTML = dados.subscribers_count;  
   let languagesURL = dados.languages_url;
   let language ="";
   let maiorNumero = "";
