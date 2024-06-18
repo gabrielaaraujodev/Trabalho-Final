@@ -20,8 +20,6 @@ fetch(apiUrl)
   })
   .then((data) => {
     dados = data;
-    console.log("🚀 ~ .then ~ dados:", dados)
-    
     changeInformatios();
   })
 
@@ -52,7 +50,7 @@ function changeInformatios() {
   let data = new Date(dados.created_at);
   let dataFormatada = (data.getDate()) + "/" + (data.getMonth()) + "/" + (data.getFullYear());
   repoDescription[1].innerHTML = dataFormatada;
-  repoLink[3].href = dados.html_url;
+  repoLink[4].href = dados.html_url;
   seguidores.innerHTML = dados.stargazers_count;
   favoritos.innerHTML = dados.subscribers_count;  
   let languagesURL = dados.languages_url;

@@ -17,7 +17,7 @@ body {
 #page {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: .5rem;
   gap: 1.5rem;
   width: 85vh;
   box-shadow: 0.2rem 0.2rem 1.2rem 0.1rem black
@@ -27,6 +27,7 @@ div#nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 div#nav h3{
@@ -36,6 +37,7 @@ div#nav h3{
 div#secoes {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 div#secoes span{
@@ -60,9 +62,10 @@ p{
 
 div#infoPerfil {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 1.5rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 div#infoPerfil img#pessoal {
@@ -106,6 +109,8 @@ span#adjustSeguidores {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
 
 span#adjustSeguidores div {
